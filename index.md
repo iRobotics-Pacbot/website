@@ -1,5 +1,11 @@
 # Home
 
+## Next Competition Date
+
+Saturday, April 11 2025
+
+-----
+
 ## PacBot Rules and Guidelines 2022
 
 **As of 1/7/2022**
@@ -59,7 +65,3 @@ The ghosts will not take physical form, but will instead be projected onto the a
 9. Bear in mind that this is a friendly gathering of people seeking to further their knowledge of robots and participate in a fun challenge. For this reason, we urge teams to build their robots in good faith with the spirit of competition. Any unfair or unreasonable characteristic of your PacBot will be considered a violation of this principle.
 
 [Video of Pacbot Demonstration](https://www.youtube.com/watch?v=WoFzPKz9cd4)
-
-## Next Competition Date
-
-Saturday, April 11 2025
