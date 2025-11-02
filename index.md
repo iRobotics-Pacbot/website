@@ -1,4 +1,4 @@
-# Home
+# UIUC Pacbot Competition guidelines
 
 ## Next Competition Date
 
@@ -6,13 +6,19 @@ Saturday, April 11 2025
 
 -----
 
-## PacBot Rules and Guidelines 2022
+## Pacbot Description
+
+The PacBot competition was started by the Harvard Undergraduate Robotics Club and is now hosted annually at the University of Illinois Urbana-Champaign through iRobotics. The competition takes place in a scaled-up Pacman-inspired arena. The PacBot must navigate the arena and make its trajectory decisions autonomously. Its goal is two-fold: to avoid the pursuing “ghosts” – Inky, Pinky, Blinky, and Clyde – and to collect as many points as possible with only three lives. 
+
+So far, several schools from around North America have taken up the challenge.
+
+## PacBot Rules and Guidelines (Adapted from Harvard, 2022)
 
 **As of 1/7/2022**
 
-Below is the ruleset that must be followed when designing your robots for the fourth annual 2022 PacBot Competition at Harvard University. Note that these rules are dynamic and subject to change between now and up to one month before the competition date. Any time the rules are updated, an email will be sent to each participating team alerting them of the change and its purpose. Should you have any questions about the reason for a rule provided below, please email Thomas Biasi, the PacBot Project Manager, at <tbiasi@college.harvard.edu>.
+Below is the ruleset that must be followed when designing your robots for the third annual PacBot Competition at the University of Illinois Urbana-Champaign. Note that these rules are dynamic and subject to change between now and up to one month before the competition date. Any time the rules are updated, an email will be sent to each participating team alerting them of the change and its purpose. 
 
-Documentation for the game code and PacBot arena, along with example robot designs, can be found at our GitHub: [github.com/HarvardURC/Pacbot](https://github.com/HarvardURC/Pacbot). Teams should consult the GitHub for information regarding communicating with the game from their bots.
+Documentation for the game code and PacBot arena, along with example robot designs, can be found at the GitHub: [github.com/HarvardURC/Pacbot](https://github.com/HarvardURC/Pacbot). Teams should consult the GitHub for information regarding communicating with the game from their bots.
 
 -----
 
@@ -24,7 +30,11 @@ This competition will mimic the popular game of Pac-Man. It will consist of four
 
 ### Arena
 
-The competition will consist of an arena, with boundaries 4” tall. The boundaries will be set up to mimic arenas found in the Pacman game. Unlike the original Pacman game, PacBots will not be able to treat the map as an infinite continuum. In other words, the PacBots cannot exit the arena on the right side and re-enter on the left side; boundaries will be strict. The arena will be identical to the virtual arena used in the game of Pacman (a SolidWorks file of the arena is included in the [GitHub](https://github.com/HarvardURC/Pacbot)), with each passage being 7” wide, NOT including the quarter inch boundary. The arena is programmatically divided into a 28 x 31 grid which is used for reporting the ghosts’ and PacBot’s locations; see [grid.py in the GitHub](https://github.com/HarvardURC/Pacbot/blob/master/src/gameEngine/pacbot/grid.py) for the grid structure. Most grid units will be assumed to have one implicit “dot” that will be automatically collected when the PacBot enters that unit (more details found [here](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior)). Note that the PacBot does not have to go through the unit to collect the dot; it can enter it and turn around. There will be four “special dots” in the arena at the corresponding locations, as seen in the above webpage. More details about these special dots are given in the “Gameplay” section of this document. The dots on the map will not respawn at any time. **Teams should be aware that due to design constraints the arena is built in three pieces, and may have small gaps or lips in the seams between the sections.**
+The competition will consist of an arena, with boundaries 4” tall. The boundaries will be set up to mimic arenas found in the Pacman game. The arena will be identical to the virtual arena used in the game of Pacman (a SolidWorks file of the arena is included in the [GitHub](https://github.com/HarvardURC/Pacbot)), with each passage being 7” wide, NOT including the quarter inch boundary. Account for some tolerance with walls and floor since arenas are hand-constructed by the team. **Teams should be aware that due to design constraints the arena is built in several pieces, and may have small gaps or lips in the seams between the sections.**
+
+Unlike the original Pacman game, PacBots will not be able to treat the map as an infinite continuum. In other words, the PacBots cannot exit the arena on the right side and re-enter on the left side; boundaries will be strict. However, ghosts are only projected onto the field and will be able to exit and enter from opposite sides. 
+
+The arena is programmatically divided into a 28 x 31 grid which is used for reporting the ghosts’ and PacBot’s locations; see [grid.py in the GitHub](https://github.com/HarvardURC/Pacbot/blob/master/src/gameEngine/pacbot/grid.py) for the grid structure. Most grid units will be assumed to have one implicit “dot” that will be automatically collected when the PacBot enters that unit (more details found [here](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior)). Note that the PacBot does not have to go through the unit to collect the dot; it can enter it and turn around. There will be four “special dots” in the arena at the corresponding locations, as seen in the above webpage. More details about these special dots are given in the “Gameplay” section of this document. The dots on the map will not respawn at any time. 
 
 ### Gameplay
 
