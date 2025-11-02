@@ -14,7 +14,7 @@ So far, several schools from around North America have taken up the challenge.
 
 ## PacBot Rules and Guidelines (Adapted from Harvard, 2022)
 
-**As of 1/7/2022**
+**As of 11/2/2025**
 
 Below is the ruleset that must be followed when designing your robots for the third annual PacBot Competition at the University of Illinois Urbana-Champaign. Note that these rules are dynamic and subject to change between now and up to one month before the competition date. Any time the rules are updated, an email will be sent to each participating team alerting them of the change and its purpose. 
 
