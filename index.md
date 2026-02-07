@@ -2,7 +2,7 @@
 
 ## Next Competition Date
 
-Saturday, April 11 2025
+Saturday, April 11 2026
 
 -----
 
